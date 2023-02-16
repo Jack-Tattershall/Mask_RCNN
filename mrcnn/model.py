@@ -2029,7 +2029,7 @@ class MaskRCNN(object):
         self.model_dir = model_dir
         self.set_log_dir()
         self.keras_model = self.build(mode=mode, config=config)
-        print("HELLO")
+   
 
     def build(self, mode, config):
         """Build Mask R-CNN architecture.
@@ -2459,7 +2459,7 @@ class MaskRCNN(object):
         optimizer = tf.keras.optimizers.legacy.SGD(
             lr=learning_rate, momentum=momentum, clipnorm=self.config.GRADIENT_CLIP_NORM
         )
-        print("heloo")
+     
         # Add Losses
         loss_names = [
             "rpn_class_loss",
